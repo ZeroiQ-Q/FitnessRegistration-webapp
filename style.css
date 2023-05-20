@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: league spartan, sans-serif;
+
+  font: normal 600 18px league spartan, sans-serif;
+}
+.inner {
+  max-width: 400px;
+}
+.details {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.details p {
+  color: rgb(151, 148, 148);
+  font-weight: 700;
+}
+.training-plan-align {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  padding: 14px;
+}
+.plans-check {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.user-details-section {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 12px 46px;
+  border-radius: 20px;
+  animation: moveside 1.5s;
+}
+.private-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+.title {
+  color: white;
+  margin-top: 30px;
+  text-align: right;
+  margin-right: 3%;
+  text-transform: uppercase;
+  font: normal 900 100px "league spartan", sans-serif;
+  -webkit-text-stroke: 2px rgb(151, 145, 145);
+  animation: move 1s;
+}
+.sub-title {
+  margin-top: 15px;
+  margin-left: 3%;
+  font: normal 900 60px "league spartan", sans-serif;
+  color: white;
+  -webkit-text-stroke: 1.5px rgb(151, 145, 145);
+  margin-bottom: 40px;
+  animation: moveside 2s;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 20px;
+  padding: 3px 14px 14px 14px;
+}
+
+.shade {
+  background-color: rgb(250, 250, 250);
+}
+td {
+  font: normal 600 18px "league spartan", sans-serif;
+  padding: 12px 100px 12px 14px;
+  color: rgb(130, 125, 125);
+  border-radius: 3px;
+}
+
+th {
+  color: rgb(151, 145, 145);
+  font: normal 800 18px "league spartan", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0px;
+}
+.plans-section {
+  margin-bottom: 20px;
+  animation: movesidex 1.5s;
+}
+.text-field {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  font: normal 700 17px "league spartan", sans-serif;
+  padding: 4px 3px;
+  color: rgb(130, 125, 125);
+}
+.checks {
+  display: flex;
+  gap: 18px;
+}
+.training-plan {
+  margin-bottom: 12px;
+  border: 1px solid rgb(182, 181, 181);
+  padding: 5px 8px 3px 8px;
+  border-radius: 6px;
+}
+.inside-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.training-hour:focus::placeholder {
+  color: transparent;
+}
+.training-hour::placeholder {
+  opacity: 0.6;
+}
+input:focus {
+  outline: none;
+}
+.register {
+  margin-top: 5px;
+  border: 2px solid rgb(221, 221, 221);
+  background: white;
+  border-radius: 6px;
+  color: rgb(159, 155, 155);
+  padding: 9px 20px;
+  cursor: pointer;
+  font: normal 700 17px "league spartan", sans-serif;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registered-alert {
+  margin-top: 20px;
+  font: normal 700 24px "league spartan", sans-serif;
+  text-transform: uppercase;
+  color: rgb(151, 145, 145);
+}
+.user-plan {
+  margin-top: 12px;
+  display: flex;
+  gap: 40px;
+}
+.user-details,
+.cost-area {
+  font: normal 700 18px "league spartan", sans-serif;
+  padding: 12px 15px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+  color: rgb(151, 145, 145);
+}
+.cost-area {
+  border: none;
+  background-color: #333333;
+  padding: 12px 15px;
+  color: white;
+}
+
+.weight-notice {
+  margin-top: 16px;
+  text-transform: lowercase;
+  font: italic 400 16px "Bona Nova", serif;
+}
+.total-cost {
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.cost {
+  font-size: 26px;
+  transform: translate(118px, -20px);
+  -webkit-text-stroke: 1px rgb(151, 145, 145);
+  color: #333333;
+}
+.label {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: rgb(151, 145, 145);
+  font: italic 400 14px "Bona Nova", serif;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes moveside {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes movesidex {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

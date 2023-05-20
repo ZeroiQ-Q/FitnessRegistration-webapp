@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Best Fitness</title>
+  </head>
+ 
+  <body>
+    <h1 class="title">Best Fitness</h1>
+    <h2 class="sub-title">iGNITE YOUR FITNESS POTENTIAL</h2>
+    <div class="info-section">
+      <div class="plans-section">
+        <table>
+          <tr>
+            <th>Training Plan</th>
+            <th>Prices (NPR)</th>
+          </tr>
+          <tr>
+            <td class="shade">Beginner (2 sessions per week) - Weekly Fee</td>
+            <td class="shade">1000</td>
+          </tr>
+          <tr>
+            <td>Intermediate (3 sessions per week) - Weekly Fee</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td class="shade">
+              Elite (More than 3 sessions per week) - Weekly Fee
+            </td>
+            <td class="shade">3000</td>
+          </tr>
+          <tr>
+            <td>Private Trainer - Per hour</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td class="shade">Sauna - Per session</td>
+            <td class="shade">1500</td>
+          </tr>
+          <tr>
+            <td>Swimming - Per session</td>
+            <td>1000</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="user-details-section">
+        <div class="inner">
+          <div class="details">
+            <p class="">Customer Name :</p>
+            <input class="customer-name text-field" type="text" />
+          </div>
+
+          <div class="details">
+            <p class="">Current Weight (Kg) :</p>
+            <input class="current-weight text-field" type="number" />
+          </div>
+          <div class="details">
+            <p class="">Target Weight (Kg) :</p>
+            <input class="target-weight text-field" type="number" />
+          </div>
+        </div>
+
+        <div class="details training-plan-align">
+          <p class="training-plan">Training Plan</p>
+
+          <div class="plans-check">
+            <div class="checks">
+              <div class="inside-check">
+                <input type="checkbox" name="" id="beginner" />
+                <p class="">Beginner</p>
+              </div>
+
+              <div class="inside-check">
+                <input type="checkbox" name="" id="intermediate" />
+                <p class="">Intermediate</p>
+              </div>
+
+              <div class="inside-check">
+                <input type="checkbox" name="" id="elite" />
+                <p class="">Elite</p>
+              </div>
+
+              <div class="inside-check">
+                <input type="checkbox" name="" id="swimming" />
+                <p class="">Swimming</p>
+              </div>
+
+              <div class="inside-check">
+                <input type="checkbox" name="" id="sauna" />
+                <p class="">Sauna(optional)</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="private-box">
+                <input type="checkbox" name="" id="private" />
+                <p class="">Private Trainer</p>
+              </div>
+
+              <input
+                class="training-hour text-field"
+                type="number"
+                placeholder="No. of hours"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="register">Register</button>
+      </div>
+    </div>
+
+    <div class="output"></div>
+
+    <p class="label">Best Fitness © Developed by : Sushant Bhandari</p>
+     
+    </p>
+
+    <script src="javascript.js"></script>
+
+  </body>
+</html>
